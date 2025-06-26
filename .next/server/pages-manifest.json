@@ -1,1 +1,23 @@
-{"/_document":"pages/_document.js","/_app":"pages/_app.js","/api/admin/users":"pages/api/admin/users.js","/admin/users":"pages/admin/users.html","/_error":"pages/_error.js","/api/auth/forgot-password":"pages/api/auth/forgot-password.js","/api/auth/reset-password":"pages/api/auth/reset-password.js","/api/auth/register":"pages/api/auth/register.js","/api/auth/send-verification":"pages/api/auth/send-verification.js","/api/auth/verify-email":"pages/api/auth/verify-email.js","/api/items/[itemId]":"pages/api/items/[itemId].js","/api/email/send-reminder":"pages/api/email/send-reminder.js","/api/lists/[listId]":"pages/api/lists/[listId].js","/api/lists/[listId]/items":"pages/api/lists/[listId]/items.js","/api/lists":"pages/api/lists.js","/api/user/profile":"pages/api/user/profile.js","/email-settings":"pages/email-settings.html","/":"pages/index.html","/dashboard":"pages/dashboard.html","/api/auth/[...nextauth]":"pages/api/auth/[...nextauth].js","/login":"pages/login.js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/admin/users": "pages/admin/users.js",
+  "/_error": "pages/_error.js",
+  "/api/admin/users": "pages/api/admin/users.js",
+  "/api/auth/forgot-password": "pages/api/auth/forgot-password.js",
+  "/api/auth/reset-password": "pages/api/auth/reset-password.js",
+  "/api/auth/register": "pages/api/auth/register.js",
+  "/api/email/send-reminder": "pages/api/email/send-reminder.js",
+  "/api/items/[itemId]": "pages/api/items/[itemId].js",
+  "/api/auth/send-verification": "pages/api/auth/send-verification.js",
+  "/api/auth/verify-email": "pages/api/auth/verify-email.js",
+  "/api/lists/[listId]": "pages/api/lists/[listId].js",
+  "/dashboard": "pages/dashboard.js",
+  "/email-settings": "pages/email-settings.js",
+  "/api/lists/[listId]/items": "pages/api/lists/[listId]/items.js",
+  "/api/lists": "pages/api/lists.js",
+  "/api/user/profile": "pages/api/user/profile.js",
+  "/": "pages/index.js",
+  "/login": "pages/login.js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js"
+}

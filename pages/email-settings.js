@@ -3,6 +3,7 @@ import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import AuthGuard from '../components/AuthGuard'
 import { Bell, Mail, Settings, Check, X } from 'lucide-react'
+import { useState } from 'react'
 
 export default function EmailSettings() {
   const { data: session } = useSession()
