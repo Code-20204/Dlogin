@@ -19,6 +19,9 @@ const getBaseUrl = () => {
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  experimental: {
+    webpackBuildWorker: true,
+  },
 
   webpack: (config) => {
     config.resolve.alias['@'] = path.resolve(__dirname)
