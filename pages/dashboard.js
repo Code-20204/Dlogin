@@ -7,7 +7,6 @@ import AuthGuard from '@/components/AuthGuard'
 import ListView from '@/components/ListView'
 import AutoListBuilder from '@/components/AutoListBuilder'
 import EmailVerificationBanner from '@/components/EmailVerificationBanner'
-import { useState, useEffect } from 'react'
 
 function Dashboard() {
   const { data: session } = useSession()
