@@ -24,12 +24,12 @@ export default async function handler(req, res) {
 
     if (!user) {
       // 重定向到验证失败页面
-      return res.redirect('/login?error=invalid_token&message=验证链接无效或已过期')
+      return res.redirect('/login?error=invalid_token&message=' + encodeURIComponent('验证链接无效或已过期'))
     }
 
     if (user.isEmailVerified) {
       // 重定向到已验证页面
-      return res.redirect('/dashboard?message=邮箱已验证')
+      return res.redirect('/dashboard?message=' + encodeURIComponent('邮箱已验证'))
     }
 
     // 更新用户状态为已验证
@@ -44,9 +44,9 @@ export default async function handler(req, res) {
     })
 
     // 重定向到成功页面
-    res.redirect('/dashboard?message=邮箱验证成功！您现在可以使用所有功能了')
+    res.redirect('/dashboard?message=' + encodeURIComponent('邮箱验证成功！您现在可以使用所有功能了'))
   } catch (error) {
     console.error('Email verification error:', error)
-    res.redirect('/login?error=server_error&message=验证过程中发生错误')
+    res.redirect('/login?error=server_error&message=' + encodeURIComponent('验证过程中发生错误'))
   }
 }
