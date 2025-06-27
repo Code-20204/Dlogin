@@ -1,16 +1,17 @@
 {
+
   "name": "dlogin-task-manager",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
     "db:studio": "prisma studio",
-    "build:prod": "NODE_ENV=production next build",
+    "build:prod": "cross-env NODE_ENV=production next build",
     "start:prod": "NODE_ENV=production next start",
     "deploy:check": "node check-env.js",
     "deploy:build": "npm run deploy:check && npm run build:prod",
@@ -43,6 +44,7 @@
     "dotenv-cli": "^8.0.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "cross-env": "^7.0.3"
   }
 }
