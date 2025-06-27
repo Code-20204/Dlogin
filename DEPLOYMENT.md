@@ -10,7 +10,7 @@
 - **启动命令**: `npm run dev`
 
 ### 生产环境 (Production)
-- **URL**: `https://d.studyhard.qzz.io`
+- **URL**: `https://d.20204.xyz`
 - **配置文件**: `.env.production`
 - **构建命令**: `npm run build:prod`
 - **启动命令**: `npm run start:prod`
@@ -37,11 +37,11 @@ NODE_ENV="development"
 DATABASE_URL="your-prod-database-url"
 
 # NextAuth.js
-NEXTAUTH_URL="https://d.studyhard.qzz.io"
+NEXTAUTH_URL="https://d.20204.xyz"
 NEXTAUTH_SECRET="your-production-secret"
 
 # 应用设置
-APP_URL="https://d.studyhard.qzz.io"
+APP_URL="https://d.20204.xyz"
 NODE_ENV="production"
 ```
 

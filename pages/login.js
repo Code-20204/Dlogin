@@ -3,7 +3,6 @@ import { signIn, getSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { Github, Mail, Eye, EyeOff } from 'lucide-react'
-import { useState } from 'react'
 
 export default function Login() {
   const [isLogin, setIsLogin] = useState(true)
