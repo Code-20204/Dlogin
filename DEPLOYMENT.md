@@ -10,7 +10,7 @@
 - **启动命令**: `npm run dev`
 
 ### 生产环境 (Production)
-- **URL**: `https://d.20204.xyz`
+- **URL**: `https://b.20204.xyz`
 - **配置文件**: `.env.production`
 - **构建命令**: `npm run build:prod`
 - **启动命令**: `npm run start:prod`
@@ -37,11 +37,11 @@ NODE_ENV="development"
 DATABASE_URL="your-prod-database-url"
 
 # NextAuth.js
-NEXTAUTH_URL="https://d.20204.xyz"
+NEXTAUTH_URL="https://b.20204.xyz"
 NEXTAUTH_SECRET="your-production-secret"
 
 # 应用设置
-APP_URL="https://d.20204.xyz"
+APP_URL="https://b.20204.xyz"
 NODE_ENV="production"
 ```
 
@@ -98,7 +98,7 @@ vercel --prod
 应用会根据 `NODE_ENV` 自动选择合适的域名：
 
 - **开发环境**: `http://localhost:3000`
-- **生产环境**: `https://d.studyhard.qzz.io`
+- **生产环境**: `https://b.20204.xyz`
 
 ### 配置文件位置
 - 开发配置: `lib/config.js` 中的 `getBaseUrl()` 函数
@@ -123,13 +123,13 @@ RESEND_FROM_EMAIL="super@studyhard.qzz.io"
 1. 在 GitHub 创建 OAuth App
 2. 设置回调 URL:
    - 开发: `http://localhost:3000/api/auth/callback/github`
-   - 生产: `https://d.studyhard.qzz.io/api/auth/callback/github`
+   - 生产: `https://b.20204.xyz/api/auth/callback/github`
 
 ### Google OAuth
 1. 在 Google Cloud Console 创建项目
 2. 设置授权重定向 URI:
    - 开发: `http://localhost:3000/api/auth/callback/google`
-   - 生产: `https://d.studyhard.qzz.io/api/auth/callback/google`
+   - 生产: `https://b.20204.xyz/api/auth/callback/google`
 
 ## 📊 监控和日志
 

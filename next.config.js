@@ -11,7 +11,7 @@ const getBaseUrl = () => {
     return 'http://localhost:3000'
   }
   if (isProduction) {
-    return 'https://d.20204.xyz'
+    return process.env.APP_URL || process.env.NEXTAUTH_URL || 'https://b.20204.xyz'
   }
   return process.env.APP_URL || 'http://localhost:3000'
 }
